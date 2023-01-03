@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proj-2|About</title>
+
+    <link rel="stylesheet" type="text/css" href="Stylenew2.css">
+    <link rel="stylesheet" href="https:stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="images/1Stoplogo.png" width="150"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="#">Login/Register</a>
+        </div>
+    </nav>
+
+
+    <div class="contact_container">
+        <h2>Contact Us</h2>
+        <div class="g_map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.65174788705!2d80
+        .16867811482226!3d12.994111990841144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525e1f5da86397%3A0x21092f216ee26e47!2sChennai%20International%20Airport!5e0!3m2!1sen!2sin!4v1647718156548!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="contact_content">
+            <p><b>Address:Chennai ,India</b></p>
+            <p><b>Call:+919078675645</b></p>
+            <p><b>Mail:support@1stop.ai</b></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_logo">
+            <a href="index.html"><img src="images/1Stoplogo.png" width="150"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="services.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="#">Login</a>|
+            <a href="#">Sign Up</a>
+
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="services.html">Privacy Policy</a>|
+            <a href="services.html">Terms of Use</a>|
+            <a href="services.html">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/"
+            target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+         <a href="https://www.instagram.com/1stop.co.in/"
+           target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+         <a href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in" 
+           target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+         <a href="https://twitter.com/1stopconnection?lang=en" 
+           target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://api.WhatsApp.com/send?phone=+919045743356" target="_blank"><i class="fa fa-whatsapp"
+                    aria-hidden="true"></i></a>
+            <a href="tel: +919045743356"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto:support@1stop.ai"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+        </div>
+        <hr>
+        <p>Copyright &copy; 2021 1stop. All right reserved</p>
+    </footer>
+
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzLYWPdtA6_lMUkN2mL0sfLD2EFPytmXrHNogegyeDLwdlz61ShqmGt1T04NtVKqgroLw/exec'
+        const form = document.forms['submit-googlesheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for filling up the details, Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>

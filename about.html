@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Proj-2|About</title>
+
+    <link rel="stylesheet" type="text/css" href="Stylenew2.css">
+    <link rel="stylesheet" href="https:stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="proj-2.html"><img src="images/1Stoplogo.png" width="150"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href=" ">Login/Register</a>
+        </div>
+    </nav>
+  <div class="about_us">
+      <h2>About Us</h2>
+      <div class="about_content">
+          <p>We are maximisers. We're out on our own journeys to maximise - be the best at what we choose 
+              and care about the most - whether it be our impact, voice, potential, ideas, influence, well-being 
+              or more. Because when we maximise ourselves in our inclusive teams, 1Stop is able to deliver the
+               best imaginable value for our customers, stakeholders and the planet!</p>
+      </div>
+      <h2>Our Mission</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut accusantium 
+        tenetur quisquam id? Similique, quis reprehenderit doloremque laborum, alias 
+        soluta ut eligendi ad sit nihil laboriosam corporis dolores temporibus? Cum!</p>
+  </div>
+
+<hr>
+    <div class="feed">
+        <h2>Write a review</h2>
+        <div class="feed_form">
+            <form name="submit-googlesheet" method="post">
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email ID"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7" name="Review" placeholder="Write your review"></textarea><br>
+                <button type="submit">Submit</button>
+
+
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer_logo">
+            <a href="proj-2.html"><img src="images/1Stoplogo.png" width="150"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="services.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="#">Login</a>|
+            <a href="#">Sign Up</a>
+
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="services.html">Privacy Policy</a>|
+            <a href="services.html">Terms of Use</a>|
+            <a href="services.html">Refund Policy</a>
+        </div>
+        <div class="social">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/pages/category/Education-website/1Stopai-102490171820303/"
+            target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+         <a href="https://www.instagram.com/1stop.co.in/"
+           target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+         <a href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in" 
+           target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+         <a href="https://twitter.com/1stopconnection?lang=en" 
+           target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href="https://api.WhatsApp.com/send?phone=+919045743356" target="_blank"><i class="fa fa-whatsapp"
+                    aria-hidden="true"></i></a>
+            <a href="tel: +919045743356"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto:support@1stop.ai"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+        </div>
+        <hr>
+        <p>Copyright &copy; 2021 1stop. All right reserved</p>
+    </footer>
+
+    <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzLYWPdtA6_lMUkN2mL0sfLD2EFPytmXrHNogegyeDLwdlz61ShqmGt1T04NtVKqgroLw/exec'
+        const form = document.forms['submit-googlesheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => alert("Thanks for filling up the details, Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
